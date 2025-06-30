@@ -1,191 +1,124 @@
-# Quiz-Master-App-V1
+# Quiz Master App V1 🎓
 
-## Overview
+![Quiz Master App](https://img.shields.io/badge/Quiz%20Master%20App-V1-brightgreen)
 
-This is a Flask-based Quiz Application that allows users to take quizzes, track their performance, and provides an admin panel for managing quizzes and analyzing user performance.
+Welcome to the **Quiz Master App V1**! This Flask-based quiz application allows users to take quizzes, track their performance, and provides an admin panel for managing quizzes and analyzing user performance. 
 
-**[Project Statement : Quiz-Master-App-V1](https://github.com/jishnukoliyadan/Quiz-Master-App-V1/blob/main/Problem-Statement.md)**
+## Table of Contents
 
-![Quiz Master Screenshot](https://raw.githubusercontent.com/jishnukoliyadan/Quiz-Master-App-V1/refs/heads/main/quizapp/static/images/Quiz_Master.gif)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Admin Panel](#admin-panel)
+- [Performance Tracking](#performance-tracking)
+- [Presentation Video](#presentation-video)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Features
 
-- **User Roles**
-  - Admin : Create/manage subjects, chapters, quizzes, and questions
-  - Users : Attempt quizzes, view scores/history
+- **User-Friendly Interface**: The app is designed with simplicity in mind, making it easy for users to navigate.
+- **Quiz Management**: Admins can create, edit, and delete quizzes.
+- **Performance Tracking**: Users can see their scores and progress over time.
+- **Responsive Design**: The application is mobile-friendly and works on various devices.
+- **Data Visualization**: Admins can view user performance using interactive charts.
 
-- **Quiz Management**
-  - Time-limited quizzes with multiple questions
-  - Automatic scoring system
-  - Quiz attempt history tracking
+## Technologies Used
 
-- **Subject Hierarchy**
-  - Subjects → Chapters → Quizzes → Questions
+This project utilizes a range of technologies:
 
-- **Search Functionality**
-  - Unified search across users, subjects, chapters and quizzes
-  
-- **Analytics & Charts**
-  - User performance analytics
-  - Quiz statistics and participation metrics
+- **Flask**: The web framework for building the application.
+- **Bootstrap**: For responsive design and styling.
+- **CSS**: Custom styles for enhancing the user experience.
+- **HTML**: The structure of the web pages.
+- **JavaScript**: For interactive elements.
+- **Plotly & Plotly Express**: For data visualization.
+- **SQLite**: Lightweight database for storing quiz and user data.
+- **Session Management**: To keep track of user sessions.
 
-## Installation & Setup
+## Installation
 
-### 1.1 Clone the Repository
+To get started with the Quiz Master App, follow these steps:
 
-```bash
-git clone https://github.com/jishnukoliyadan/Quiz-Master-App-V1.git
-cd Quiz-Master-App-V1
-```
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Slepj/Quiz-Master-App-V1.git
+   ```
 
-### 1.2 Alternative : ZIP Extraction
+2. **Navigate to the project directory**:
+   ```bash
+   cd Quiz-Master-App-V1
+   ```
 
-```python
-# extract.py
-from zipfile import ZipFile
+3. **Install the required packages**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-with ZipFile('Quiz-Master-App-V1-main.zip', 'r') as zip:
-    zip.extractall('Quiz-Master-App-V1')
-print("Extracted to 'Quiz-Master-App-V1' folder")
-```
+4. **Run the application**:
+   ```bash
+   python app.py
+   ```
 
-### 2. Create a Virtual Environment
+5. **Open your browser** and go to `http://127.0.0.1:5000`.
 
-#### Option 1 : Using Virtualenv / Python `venv`
+For downloadable releases, visit the [Releases section](https://github.com/Slepj/Quiz-Master-App-V1/releases) to find the latest version.
 
-```bash
-# Prerequisites : Python 3.10.16
+## Usage
 
-python -m venv env
-source env/bin/activate  # On macOS/Linux
-pip install -r requirements.txt  # install dependencies
-```
+Once the application is running, users can:
 
-#### Option 2 : Using `conda` and `YAML` file
+- **Take Quizzes**: Choose from a variety of quizzes available.
+- **View Results**: After completing a quiz, users can see their scores immediately.
+- **Track Progress**: Users can view their past performance and track improvements.
 
-```bash
-# Remove existing environment if present
-conda env remove -n quizapp  # Skip if its a fresh setup
+## Admin Panel
 
-# Create new environment
-conda env create -f environment.yml
-conda activate quizapp
-```
+The admin panel allows administrators to manage quizzes and view user performance. 
 
-### 3. File Integrity Verification
+### Features of the Admin Panel:
 
-Published Checksum : `878e73196472537cd474193e9a7ec92f`
+- **Create Quizzes**: Add new quizzes with questions and answers.
+- **Edit Quizzes**: Modify existing quizzes to keep content fresh.
+- **Delete Quizzes**: Remove quizzes that are no longer relevant.
+- **User Analytics**: View detailed statistics about user performance.
 
-Generate checksum to verify project integrity :
+## Performance Tracking
 
-```bash
-python checksum.py  # Generates SHA256 hash
-```
+Admins can analyze user performance using various metrics:
 
-### 4. Handling Checksum Discrepancies (*only if encountered*)
+- **Score Trends**: Visualize how scores change over time.
+- **User Engagement**: See how often users take quizzes.
+- **Popular Quizzes**: Identify which quizzes are most taken.
 
-If checksum mismatches due to auto-generated files like `__pycache__` :
+## Presentation Video
 
-1. Stop the running Flask app (`Ctrl + C`)
+For a visual overview of the application, check out our presentation video below:
 
-2. Clean untracked files :
+[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
 
-    ```bash
-    git clean -fdX  # Removes untracked files
-    ```
+For more details, visit the [Releases section](https://github.com/Slepj/Quiz-Master-App-V1/releases) to download the latest version.
 
-3. Restore original state :
+## Contributing
 
-    ```bash
-    git restore .  # Restores all tracked modified files.
-    ```
+We welcome contributions! If you would like to help improve the Quiz Master App, please follow these steps:
 
-    **Important :** `git restore .` is irreversible - any uncommitted modifications will be permanently lost!
-
-### 5. Git Notes (Optional)
-
-[Git Notes](https://git-scm.com/docs/git-notes) added as an additional source of information. To view them :
-
-```bash
-git fetch origin "refs/notes/*:refs/notes/*"
-git log --notes=commits  # Shows notes with commit history
-```
-
-### 6. Run the Flask App
-
-```sh
-python run.py
-```
-
-The application will be available at `http://localhost:5000/`
-
-## Tech Stack
-
-- **Backend** : Flask, Flask-SQLAlchemy
-- **Frontend** : HTML, Bootstrap v5.3, CSS, Jinja2, JavaScript
-- **Database** : SQLite
-- **Visualization** : Plotly
-
-## Database Schema & ER Diagram
-
-The database follows the relational model with multiple tables linked via foreign keys. Below is the ER Diagram:
-
-![ER Diagram](quizapp/static/images/ER_Diagram.png)
-
-## Flask Application Structure
-
-```bash
-Quiz-Master-App-V1
-├── .env
-├── .gitignore
-├── checksum.py
-├── environment.yml
-├── LICENSE
-├── Milestone-Document.md
-├── Problem-Statement.md
-├── Project-Report-QuizMaster.docx
-├── Project-Report-QuizMaster.pdf
-├── README.md
-│
-├── instance
-│   └── quizapp.db
-│
-├── quizapp
-│   ├── __init__.py
-│   ├── db_seed.py
-│   ├── models.py
-│   ├── routes.py
-│   ├── static
-│   │   └── images
-│   │       └── # directory stores images
-│   │
-│   ├── templates
-│   │   ├── admin
-│   │   │   └── # directory stores Jinja2 templates of Admin routes
-│   │   │ 
-│   │   ├── base_main.html
-│   │   ├── login.html
-│   │   ├── registration.html
-│   │   │ 
-│   │   └── users
-│   │       └── # directory stores Jinja2 templates of User routes
-│   │
-│   └── utils.py
-├── requirements.txt
-└── run.py
-```
-
-## Final Project Submission
-
-Create ZIP file for submission :
-
-```bash
-# From inside Quiz-Master-App-V1 directory aka root directory :
-cd ..
-mv Quiz-Master-App-V1 quiz_master_21f1006877
-zip -r quiz_master_21f1006877.zip quiz_master_21f1006877/
-```
+1. **Fork the repository**.
+2. **Create a new branch** for your feature or bug fix.
+3. **Make your changes** and commit them.
+4. **Push to your branch** and create a pull request.
 
 ## License
 
-The license can be found in the [LICENSE](LICENSE) file.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or feedback, feel free to reach out:
+
+- **Email**: your-email@example.com
+- **GitHub**: [Slepj](https://github.com/Slepj)
+
+Thank you for checking out the Quiz Master App V1! We hope you enjoy using it.
